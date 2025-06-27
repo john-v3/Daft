@@ -1,0 +1,28 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sound Queue Example</title>
+  <script type="module" src="app.js"></script>
+</head>
+
+<body>
+  <h1>Sound Button Demo</h1>
+  <button onclick="queueSound('./life-drum.mp3')">Play Sound A</button>
+  <button onclick="queueSound('./life-nodrum.mp3')">Play Sound B</button>
+
+  <audio controls autoplay>
+    <source src="life-drum.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+    <audio controls autoplay>
+    <source src="life-nodrum.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+
+</html>
